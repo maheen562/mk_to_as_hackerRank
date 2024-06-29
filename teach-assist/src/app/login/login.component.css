@@ -1,3 +1,14 @@
-button {
-    background-color: #007bff; /* Blue background */
+.login-box{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: .5vw;
+    padding-top: 2vh;
+    padding-bottom: 7vh;
+}
+.outer-padding{
+    padding: 10vw;
+}
+.login-text{
+    font-family: Helvetica, sans-serif;
 }
