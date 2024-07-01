@@ -8,7 +8,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
   standalone: true,
   imports: [LoginComponent,RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'teach-assist';  

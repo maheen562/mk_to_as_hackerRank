@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  // standalone: true,
-  // imports: [FormsModule,HttpClient],
+  standalone: true,
+  imports: [FormsModule,HttpClientModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -24,3 +24,4 @@ export class LoginComponent {
     console.log(this.username);
   }
 }
+

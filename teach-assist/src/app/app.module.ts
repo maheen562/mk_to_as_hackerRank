@@ -1,39 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-//import { AppRoutingModule } from './app-routing.module'; // Import the routing module
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, RouterOutlet, Routes } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
-import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
-// const routes: Routes = [
-//   { path: 'login', component: LoginComponent },
-//   { path: 'mainpage', component: MainpageComponent },
-//   { path: '', redirectTo: '/login', pathMatch: 'full' },
-// ];
+const routes: Routes = [
+  { path: '', component: LoginComponent },
+  { path: 'mainpage', component: MainpageComponent }
+];
 
 @NgModule({
-  declarations: [AppComponent,LoginComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    MainpageComponent
+  ],
   imports: [
-    FormsModule,
     BrowserModule,
-    HttpClientModule,
-    RouterModule.forRoot([
-      {
-        path: '',
-        component: LoginComponent,
-      },
-      {
-        path: 'mainpage',
-        component: MainpageComponent,
-      },
-    ]),
-    
-     // Add the routing module here
+    FormsModule,
+    HttpClientModule, RouterOutlet,
+    RouterModule.forRoot(routes),
+
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
