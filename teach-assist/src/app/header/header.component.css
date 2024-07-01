@@ -1,3 +1,22 @@
-button {
-    background-color: black;
+
+
+.header-links{
+    display: flex;
+    width: 100%;
 }
+
+.teach-assist{
+    /* margin-right : 50vw; */
+}
+.container{
+    padding: 10px;
+    text-align: right;
+    /* margin-right: 100px; */
+}
+.right-hand-tabs{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    float:right;
+}
+
