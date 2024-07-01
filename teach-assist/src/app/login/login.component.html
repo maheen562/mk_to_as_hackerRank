@@ -12,26 +12,28 @@
     <h2 class="login-text">TeachAssist</h2>
     <div class = "student-teacher-tab">
         <div>
-            <input type="radio" class="tabs__radio" name="tabs-example" id="studenttab" checked>
+            <input type="radio" class="tabs__radio" name="tabs-example" id="studenttab" [(ngModel)]="type" value="student" checked>
             <label for="studenttab" class="tabs__label">Student</label>
         </div>
         <div>
-            <input type="radio" class="tabs__radio" name="tabs-example" id="teachertab">
+            <input type="radio" class="tabs__radio" name="tabs-example" id="teachertab" [(ngModel)]="type" value="teacher">
             <label for="teachertab" class="tabs__label">Teacher</label>
         </div>
-        
     </div>
     
     <h1 class="login-text">Login</h1>
     <p class="login-text">Enter your student/Teacher email</p>
-    <input class="input-box" placeholder="Username" required>
+    <label for="username"></label>
+    <input class="input-box" id="username" placeholder="Username" [(ngModel)]="username" required>
+    <p>{{username}}</p>
     <br>
-    <input class="input-box" type="password" placeholder="Password" required>
+    <label for="password"></label>
+    <input class="input-box" id="password" type="password" placeholder="Password"  [(ngModel)]="password" required>
     <br>
     <br>
     <a class="signin-text" href="mainpage">
     <div >
-        <button class="signin-button">
+        <button (click)="getLoginInformation()" class="signin-button">
                 Sign in
         </button>   
     </div>

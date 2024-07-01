@@ -5,29 +5,35 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-const routes: Routes = [
-    { path: 'login', component: LoginComponent },
-    { path: 'mainpage', component: MainpageComponent },
-    { path: '', redirectTo: '/login', pathMatch: 'full' }
- ];
-  
+// const routes: Routes = [
+//   { path: 'login', component: LoginComponent },
+//   { path: 'mainpage', component: MainpageComponent },
+//   { path: '', redirectTo: '/login', pathMatch: 'full' },
+// ];
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent,LoginComponent],
   imports: [
+    FormsModule,
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
-        {
-            path: '',component: LoginComponent            
-        },
-        {
-            path: 'mainpage', component: MainpageComponent
-        }
-    ]), // Add the routing module here 
+      {
+        path: '',
+        component: LoginComponent,
+      },
+      {
+        path: 'mainpage',
+        component: MainpageComponent,
+      },
+    ]),
+    
+     // Add the routing module here
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
