@@ -15,13 +15,19 @@ export class LoginComponent {
   password: string = '';
   result: string = '';
   type: string = 'student';
-  // modul:any * ();
+  //modul:any * ();
 
   // constructor(private loginService: LoginService) { }
   // loginUser(){
-  
-  // }
+  //   var username = this.username;
+  //   var password = this.password;
+  //   var type = this.type
 
+  //   this.loginService.getUserDetails(username,password,type).subscribe((res: Boolean) =>{
+  //     this.getData = res;
+      
+  //   }
+  // }
   // // public Jsonreply: any;
 
   // // constructor(private http: HttpClient) {
