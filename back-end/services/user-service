@@ -1,0 +1,49 @@
+//This file consists of the services for User
+//Written by: Maheen Abdul Khaliq Khan
+//Adaptation from: https://protocoderspoint.com/flutter-todo-app-with-nodejs-mongodb-at-backend/
+
+
+const UserModel = require("../models/user-model");
+const jwt = require("jsonwebtoken");
+
+
+class UserServices{
+ 
+    static async registerUser(email,firstName,lastName,password,uid,googleRegister,userType){
+        try{
+                
+                const createUser = new UserModel({email,firstName,lastName,password,uid,googleRegister,userType});
+                return await createUser.save();
+        }catch(err){
+            throw err;
+        }
+    }
+
+    static async checkGoogleLogin(useremail){
+        try {
+            return await UserModel.find({email:useremail},{googleRegister:1});
+        } catch (error) {
+            throw error;
+        }
+    }
+
+    static async checkUser(email){
+        try {
+            console.log(email)
+            return await UserModel.findOne({email});
+        } catch (error) {
+            throw error;
+        }
+    }
+    
+    static async generateAccessToken(tokenData,JWTSecretKey,JWT_EXPIRE){
+        return jwt.sign(tokenData, JWTSecretKey, { expiresIn: JWT_EXPIRE });
+    }
+
+ 
+    
+    
+
+}
+
+module.exports = UserServices;
