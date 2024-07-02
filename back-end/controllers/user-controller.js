@@ -10,7 +10,7 @@ exports.register = async (req, res, next) => {
         console.log(req.body)
         const { email,firstName,lastName,password,uid,googleRegister,userType} = req.body;
         const successRes = await UserServices.registerUser(email,firstName,lastName,password,uid,googleRegister,userType);
-        console.log(email)
+        //console.log(email)
         
         let user = await UserServices.checkUser(email);
 

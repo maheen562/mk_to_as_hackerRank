@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="studentTeacherTab.js" defer></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="outer-padding"></div>
-<div class="login-box">
-    <h2 class="login-text">TeachAssist</h2>
-    <div class = "student-teacher-tab">
-        <div>
-            <input type="radio" class="tabs__radio" name="tabs-example" id="studenttab" [(ngModel)]="type" value="student" checked>
+    <div class="login-box">
+      <h2 class="login-text">TeachAssist</h2>
+      
+
+      <form (ngSubmit)="loginUser()" #loginForm="ngForm">
+        <div class="student-teacher-tab">
+          <div>
+            <input
+              type="radio"
+              class="tabs__radio"
+              name="tabs-example"
+              id="studenttab"
+              [(ngModel)]="type"
+              value="student"
+              checked
+            />
             <label for="studenttab" class="tabs__label">Student</label>
-        </div>
-        <div>
-            <input type="radio" class="tabs__radio" name="tabs-example" id="teachertab" [(ngModel)]="type" value="teacher">
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="tabs__radio"
+              name="tabs-example"
+              id="teachertab"
+              [(ngModel)]="type"
+              value="teacher"
+            />
             <label for="teachertab" class="tabs__label">Teacher</label>
+          </div>
         </div>
-    </div>
-    
-    <h1 class="login-text">Login</h1>
-    <p class="login-text">Enter your student/Teacher email</p>
-    <label for="username"></label>
-    <input class="input-box" id="username" placeholder="Username" [(ngModel)]="username" required>
-    <!-- <p>{{username}}</p> -->
-    <br>
-    <label for="password"></label>
-    <input class="input-box" id="password" type="password" placeholder="Password"  [(ngModel)]="password" required>
-    <br>
-    <br>
-    <a class="signin-text" href="mainpage">
-    <div >
-        <button (click)="getLoginInformation()" class="signin-button">
-                Sign in
-        </button>   
-    </div>
-</a>
-    <br>
-    <p class="google-additional-text">or continue with</p>
-    <a href="#">
-    <div class="google-button-box">
+  
+        <h1 class="login-text">Login</h1>
+        <p class="login-text">Enter your student/Teacher email</p>
+        <label for="username"></label>
+        <input
+          class="input-box"
+          id="username"
+          name="username"
+          placeholder="Username"
+          [(ngModel)]="username"
+          required
+        />
         
-                <div class="content-wrapper">
-                    <img class="logo-wrapper" src="https://developers.google.com/identity/images/g-logo.png">
+        <br />
+        <label for="password"></label>
+        <input
+          class="input-box"
+          id="password"
+          name = "password"
+          type="password"
+          placeholder="Password"
+          [(ngModel)]="password"
+          required
+        />
+        <br />
+        <br />
 
-                    
-                    <span class=".google-text">
-                        Google
-                    </span>
+        <div>
+          <button class="signin-button">Sign in</button>
+        </div>
+      </form>
 
-                </div>
-            
+
+      <br />
+      <p class="google-additional-text">or continue with</p>
+      <a href="#">
+        <div class="google-button-box">
+          <div class="content-wrapper">
+            <img
+              class="logo-wrapper"
+              src="https://developers.google.com/identity/images/g-logo.png"
+            />
+
+            <span class=".google-text"> Google </span>
+          </div>
+        </div>
+      </a>
+
+      <p class="google-additional-text">
+        By clicking continue, you agree to our Terms of Service and Privacy
+        Policy
+      </p>
     </div>
-    </a>
-
-    <p class="google-additional-text">By clicking continue, you agree to our Terms of Service and Privacy Policy</p>
-    </div>
-</body>
+  </body>
 </html>
