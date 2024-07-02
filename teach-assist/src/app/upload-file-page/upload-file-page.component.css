@@ -1,0 +1,29 @@
+body, html {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+ol {
+    list-style-position: inside;
+    font-size: 37px; /* Increase font size of the ordered list */
+    margin-right: 200px;
+}
+li {
+    margin: 0; /* Ensure no extra spacing between list items */
+    padding: 5px 0; /* Add padding for visual separation */
+}
+button {
+    margin-left: 70px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
