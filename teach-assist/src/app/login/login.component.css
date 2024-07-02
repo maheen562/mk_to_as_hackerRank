@@ -122,3 +122,9 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+
+.alert-danger{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

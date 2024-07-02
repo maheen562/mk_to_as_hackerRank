@@ -19,7 +19,7 @@ export class LoginService {
       "type" : type
     }
 
-    return this.http.post("http://localhost:3000/login",loginData);
+    return this.http.post(LOGIN_URL,loginData);
   }
   
 

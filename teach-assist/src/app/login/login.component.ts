@@ -14,12 +14,12 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
-  username: string = 'vbdgs';
-  password: string = 'gegw';
+  username: string = '';
+  password: string = '';
   result: string = '';
   type: string = 'student';
-
-  reply: any;
+  errorMessage = '';
+    reply: any;
   //submitted: boolean = false;
 
   // postData= {
@@ -36,17 +36,25 @@ export class LoginComponent {
 
         // Navigate to the main page after successful login
           this.loginService.getUserDetails(this.username,this.password,this.type).subscribe(
-            Response => {
-              console.log("Success",Response);
-              this.router.navigate(['/mainpage']);
+            (response: any) => {
+              if (response && response.status === true && response.token) {
+                // Login successful, navigate to main page
+                this.router.navigate(['/mainpage']);
+              } else {
+                // Handle invalid login response (if needed)
+                this.errorMessage = 'Username or password incorrect.';
+              }
             },
-            Error => {
-              console.error("unsucessful")
-            },
+            (error) => {
+              console.error('Error:', error);
+              // Handle HTTP error response
+              this.errorMessage = 'username or password incorrect';
+            }
           );
         
       } else {
-          alert('Please enter both username and password.');
+        this.errorMessage = 'Please enter both username and password.';
+        
       }
       }
   }

@@ -64,12 +64,12 @@
         />
         <br />
         <br />
-
         <div>
           <button class="signin-button">Sign in</button>
         </div>
+        <div *ngIf="errorMessage" class="alert-danger">{{ errorMessage }}</div>
       </form>
-
+      
 
       <br />
       <p class="google-additional-text">or continue with</p>
