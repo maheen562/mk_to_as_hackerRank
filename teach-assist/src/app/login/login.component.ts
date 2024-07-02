@@ -1,7 +1,7 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { LoginService } from './login.service';
+//import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-login',
@@ -15,12 +15,12 @@ export class LoginComponent {
   password: string = '';
   result: string = '';
   type: string = 'student';
-  modul:any * ();
+  // modul:any * ();
 
-  constructor(private loginService: LoginService) { }
-  loginUser(){
+  // constructor(private loginService: LoginService) { }
+  // loginUser(){
   
-  }
+  // }
 
   // // public Jsonreply: any;
 
