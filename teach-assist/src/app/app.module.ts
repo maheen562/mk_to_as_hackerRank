@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
-import { LoginService } from './login/login.service';
+//import { LoginService } from './login/login.service';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -19,7 +19,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [ AppComponent,
-    LoginComponent, LoginService
+    LoginComponent,// LoginService
   ],
   imports: [
     BrowserModule,

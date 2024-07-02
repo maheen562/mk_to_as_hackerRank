@@ -1,10 +1,10 @@
 import { Router, RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from '../login/login.component';
 import { NgModule } from '@angular/core';
-import { MainpageComponent } from './mainpage/mainpage.component';
-import { TeachersubjectpageComponent } from './teachersubjectpage/teachersubjectpage.component';
-import { StudentSubjectPageComponent } from './student-subject-page/student-subject-page.component';
-import { UploadFilePageComponent } from './upload-file-page/upload-file-page.component';
+import { MainpageComponent } from '../mainpage/mainpage.component';
+import { TeachersubjectpageComponent } from '../teachersubjectpage/teachersubjectpage.component';
+import { StudentSubjectPageComponent } from '../student-subject-page/student-subject-page.component';
+import { UploadFilePageComponent } from '../upload-file-page/upload-file-page.component';
 
 export const routes: Routes = [
     {

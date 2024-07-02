@@ -1,3 +1,3 @@
-const BASE_URL = 'http://local:5000' ;
+const BASE_URL = 'http://localhost:3000' ;
 
-export const LOGIN = BASE_URL + 'api/foods';
+export const LOGIN_URL = BASE_URL + '/login';
