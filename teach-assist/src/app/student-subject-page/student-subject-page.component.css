@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  }
+  
+  app-header, app-footer {
+    background-color: #fff; /* Ensure header and footer have a white background */
+  }
+  
+  .main-content {
+    background-color: #D9D9D9; /* Light grey background for main content */
+    flex: 1; /* Make the main content expand to fill the remaining space */
+    padding: 20px; /* Add some padding around the main content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the boxes horizontally */
+    gap: 20px; /* Space between the boxes */
+  }
+  
+  .revise_subject_content-box, .access_peerhelp-box, .Timetable-box, .access_standing-box {
+    background-color: #03008E; /* Blue background */
+    color: white; /* White text */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center the text inside the box */
+    border-radius: 10px; /* Rounded corners */
+    width: 50%; /* Width of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    font-family: 'Times New Roman', serif; /* Font family */
+    font-size: 18px; /* Font size */
+    line-height: 1.5; /* Line height */
+    border: 2px solid #2980b9; /* Border with lighter blue color */
+  }
+  
+  /* Hover effect for all boxes */
+  .revise_subject_content-box:hover, .access_peerhelp-box:hover, .Timetable-box:hover, .access_standing-box:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .revise_subject_content-box, .access_peerhelp-box, .Timetable-box, .access_standing-box {
+      width: 80%; /* Adjust the width for smaller screens */
+      font-size: 16px; /* Decrease font size on smaller screens */
+    }
+  }
+  
