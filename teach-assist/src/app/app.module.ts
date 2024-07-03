@@ -20,29 +20,37 @@ import { PeerHelpComponent } from './peer-help/peer-help.component';
 import { ReviseSubjectContentComponent } from './revise-subject-content/revise-subject-content.component';
 import { UploadFilePageComponent } from './upload-file-page/upload-file-page.component';
 //import { LoginService } from './login/login.service';
+import * as PDFJS from "pdfjs-dist";
+import { GptComponent } from './gpt/gpt.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'mainpage', component: MainpageComponent },
   { path: 'OCR', component: OCRComponent },
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'studentSubject/peerHelp', component:PeerHelpComponent},
-  { path: 'studentSubject/revision', component:ReviseSubjectContentComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'studentSubject', component:StudentSubjectPageComponent},
-  {path: 'upload',component: UploadFilePageComponent}
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'studentSubject/peerHelp', component: PeerHelpComponent },
+  { path: 'studentSubject/revision', component: ReviseSubjectContentComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'studentSubject', component: StudentSubjectPageComponent },
+  { path: 'upload', component: UploadFilePageComponent },
+  { path: 'gpt', component: GptComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    OCRComponent,
     MainpageComponent,
-    MainpagebodyComponent,HeaderComponent,
-    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent
+    MainpagebodyComponent,
+    HeaderComponent,
+    OCRComponent,
+    FooterComponent,
+    TeachersubjectpageComponent,
+    StudentSubjectPageComponent,
+    UploadFilePageComponent,
+    GptComponent
   ],
   imports: [
     BrowserModule,
