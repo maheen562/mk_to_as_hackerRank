@@ -4,8 +4,8 @@ import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-teachersubjectpage',
-  standalone: true,
-  imports: [HeaderComponent, FooterComponent],
+  // standalone: true,
+  // imports: [HeaderComponent, FooterComponent],
   templateUrl: './teachersubjectpage.component.html',
   styleUrl: './teachersubjectpage.component.css'
 })
