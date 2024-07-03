@@ -33,7 +33,7 @@ export class LoginComponent {
             (response: any) => {
               if (response && response.status === true && response.token) {
                 // Login successful, navigate to main page
-                this.router.navigate(['OCR']);
+                this.router.navigate(['mainpage']);
               } else {
                 // Handle invalid login response (if needed)
                 this.errorMessage = 'Username or password incorrect.';
