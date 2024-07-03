@@ -13,6 +13,8 @@
     font-weight: normal; /* Adjust font weight */
     margin-right: 10px; /* Adjust spacing between "Subjects:" and the line */
     margin-bottom: 5px;
+    margin-left: 50px; /* Add left margin */
+    margin-right: 50px; /* Add right margin */
   }
   
   
@@ -22,10 +24,14 @@
     background-color: #333; /* Color of the divider line */
     margin-top: 0; /* Remove margin above the line */
     margin-bottom: 15px; /* Add margin below the line */
+    margin-left: 50px; /* Add left margin */
+    margin-right: 50px; /* Add right margin */
   }
   
   .subject-item {
     margin-top: 10px; /* Space between each subject item */
+    margin-left: 50px; /* Add left margin */
+    margin-right: 50px; /* Add right margin */
   }
   
   .subject-item h3 {
