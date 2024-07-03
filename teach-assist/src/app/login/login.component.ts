@@ -20,13 +20,7 @@ export class LoginComponent {
   type: string = 'student';
   errorMessage = '';
     reply: any;
-  //submitted: boolean = false;
 
-  // postData= {
-  //   "email" : this.username,
-  //   "password" : this.password,
-  //   "type" : this.type
-  // }
 
   constructor(private loginService: LoginService, private router: Router) {}
 
@@ -39,7 +33,7 @@ export class LoginComponent {
             (response: any) => {
               if (response && response.status === true && response.token) {
                 // Login successful, navigate to main page
-                this.router.navigate(['/mainpage']);
+                this.router.navigate(['OCR']);
               } else {
                 // Handle invalid login response (if needed)
                 this.errorMessage = 'Username or password incorrect.';

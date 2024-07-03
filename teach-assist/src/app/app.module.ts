@@ -10,17 +10,19 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { LoginService } from './login/login.service';
+import { OCRComponent } from './ocr/ocr.component';
 //import { LoginService } from './login/login.service';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'mainpage', component: MainpageComponent }
+  { path: 'mainpage', component: MainpageComponent },
+  { path : 'OCR', component: OCRComponent }
 ];
 
 
 @NgModule({
   declarations: [ AppComponent,
-    LoginComponent
+    LoginComponent,OCRComponent
   ],
   imports: [
     BrowserModule,

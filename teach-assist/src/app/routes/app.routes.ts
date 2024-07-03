@@ -5,6 +5,7 @@ import { MainpageComponent } from '../mainpage/mainpage.component';
 import { TeachersubjectpageComponent } from '../teachersubjectpage/teachersubjectpage.component';
 import { StudentSubjectPageComponent } from '../student-subject-page/student-subject-page.component';
 import { UploadFilePageComponent } from '../upload-file-page/upload-file-page.component';
+import { OCRComponent } from '../ocr/ocr.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,10 @@ export const routes: Routes = [
     {
         path: 'upload',
         component: UploadFilePageComponent
+    },
+    {
+        path: 'OCR',
+        component: OCRComponent
     }
 ];
 
