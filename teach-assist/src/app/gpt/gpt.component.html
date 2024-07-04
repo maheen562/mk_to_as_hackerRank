@@ -1,1 +1,18 @@
-<p>gpt works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form [formGroup]="queryFormGroup" (ngSubmit)="getGPTAnswer()">
+        <label class="label"> Query</label>
+        <textarea class="formcontrol"></textarea>
+        <button>Askgpt</button>
+    </form>
+    <div>
+        <pre>{{result|json}}</pre>
+    </div>
+</body>
+</html>

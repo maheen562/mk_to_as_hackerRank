@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -22,6 +22,9 @@ import { UploadFilePageComponent } from './upload-file-page/upload-file-page.com
 //import { LoginService } from './login/login.service';
 import * as PDFJS from "pdfjs-dist";
 import { GptComponent } from './gpt/gpt.component';
+// import { GPTService } from './gpt/gpt.service';
+import ChatGPT from "chatgpt-api"
+import { GPTService } from './gpt/gpt.service';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -58,9 +61,11 @@ const routes: Routes = [
     HttpClientModule,
     RouterOutlet,
     RouterModule.forRoot(routes),
+    ReactiveFormsModule
+
   ],
   exports: [FooterComponent],
-  providers: [LoginService],
+  providers: [LoginService,GPTService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
