@@ -12,28 +12,19 @@ import OpenAI from "openai";
 export class GPTService {
     
     constructor(private http: HttpClient) { }
-    // handleAskGPT(){
-    //     console.log("insdie handle")
-    //     const apiKey = "Bearer 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";
-    //     let url = "https://api.openai.com/v1/chat/completions"; 
-    //     // let httpHeaders = new HttpHeaders().set('Content-Type': 'application/json',)
-    //     let payload = {
-    //         "model": "gpt-3.5-turbo",
-    //         "messages": [
-    //           {
-    //             "role": "system",
-    //             "content": "You are a helpful assistant."
-    //           },
-    //           {
-    //             "role": "user",
-    //             "content": "Hello!"
-    //           }
-    //         ]
-    //     }
-    //     return this.http.post(OPEN_AI_URL,payload,{headers: {
-    //         'Authorization': apiKey, 'Content-Type': 'application/json'
-    //       },})
-    // }
+    handleAskGPT(){
+        console.log("insdie handle")
+        const apiKey = "Bearer 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";
+        let url = "https://api.openai.com/v1/chat/completions"; 
+        // let httpHeaders = new HttpHeaders().set('Content-Type': 'application/json',)
+        let payload = {
+            "model": "text-davinci-002",
+            "prompt": "Once upon a time,"
+        }
+        return this.http.post(OPEN_AI_URL,payload,{headers: {
+            'Authorization': apiKey, 'Content-Type': 'application/json'
+          },})
+    }
 
     
 //   // Create a new instance of ChatGPT class with your API key

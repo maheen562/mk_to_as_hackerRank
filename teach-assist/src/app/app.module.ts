@@ -25,6 +25,7 @@ import { GptComponent } from './gpt/gpt.component';
 // import { GPTService } from './gpt/gpt.service';
 import ChatGPT from "chatgpt-api"
 import { GPTService } from './gpt/gpt.service';
+import { EditPageComponent } from './edit-page/edit-page.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'teacherSubject', component: TeachersubjectpageComponent },
   { path: 'studentSubject', component: StudentSubjectPageComponent },
   { path: 'upload', component: UploadFilePageComponent },
+  { path: 'edit', component: EditPageComponent },
   { path: 'gpt', component: GptComponent },
 ];
 
@@ -53,7 +55,8 @@ const routes: Routes = [
     TeachersubjectpageComponent,
     StudentSubjectPageComponent,
     UploadFilePageComponent,
-    GptComponent
+    GptComponent,
+    EditPageComponent
   ],
   imports: [
     BrowserModule,

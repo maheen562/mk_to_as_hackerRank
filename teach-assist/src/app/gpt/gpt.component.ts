@@ -22,13 +22,13 @@ export class GptComponent {
   }
 
   getGPTAnswer(){
-  //   this.gptService.handleAskGPT().subscribe((response:any) =>{
-  //     this.result = response;
-  //   },
-  //   (error)=>{
-  //     alert(error);
-  //   }
-  // )
+    this.gptService.handleAskGPT().subscribe((response:any) =>{
+      this.result = response;
+    },
+    (error)=>{
+      alert(error);
+    }
+  )
 
   }
   

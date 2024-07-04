@@ -8,14 +8,26 @@
 </head>
 <body>
     <div class="center-content">
-        <h1><u><b>Steps to Follow</b></u></h1>
-        <ol>
-            <li>Enter the corresponding data file<button onclick="alert('Button clicked!')">Click Me</button> </li>
-            <li>Generate the required content <button onclick="alert('Button clicked!')">Click Me</button> </li>
-            <li>Edit content if required <button onclick="alert('Button clicked!')">Click Me</button>  </li>
-            <li>Proceed to final review <button onclick="alert('Button clicked!')">Click Me</button></li>
-            <li>Upload for student access <button onclick="alert('Button clicked!')">Click Me</button></li>
-        </ol>
+        <h1>Steps to Follow</h1>
+        <p>1. Upload Stubject Content</p>
+        <p>2. Generate Summary and Required questions</p>
+        <p>3. Edit and review content</p>
+        <p>4. Upload for student access</p>
+
+        <form (ngSubmit)="UploadFile()">
+            <label for="fileInput">Choose a file:</label>
+            <input type="file" id="fileInput">
+            <a href="edit">Upload</a>
+            <!-- <button type="submit" id="uploadButton" class="upload-button" name="uploadButton">Upload</button> -->
+        </form>
+        
+        <!-- <ol>
+            <li>Enter the corresponding data file</li>
+            <li>Generate the required content</li>
+            <li>Edit content if required</li>
+            <li>Proceed to final review</li>
+            <li>Upload for student access</li>
+        </ol> -->
     </div>
 
 
