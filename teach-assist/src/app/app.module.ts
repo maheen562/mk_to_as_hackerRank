@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -20,29 +20,43 @@ import { PeerHelpComponent } from './peer-help/peer-help.component';
 import { ReviseSubjectContentComponent } from './revise-subject-content/revise-subject-content.component';
 import { UploadFilePageComponent } from './upload-file-page/upload-file-page.component';
 //import { LoginService } from './login/login.service';
+import * as PDFJS from "pdfjs-dist";
+import { GptComponent } from './gpt/gpt.component';
+// import { GPTService } from './gpt/gpt.service';
+import ChatGPT from "chatgpt-api"
+import { GPTService } from './gpt/gpt.service';
+import { EditPageComponent } from './edit-page/edit-page.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'mainpage', component: MainpageComponent },
   { path: 'OCR', component: OCRComponent },
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'studentSubject/peerHelp', component:PeerHelpComponent},
-  { path: 'studentSubject/revision', component:ReviseSubjectContentComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'studentSubject', component:StudentSubjectPageComponent},
-  {path: 'upload',component: UploadFilePageComponent}
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'studentSubject/peerHelp', component: PeerHelpComponent },
+  { path: 'studentSubject/revision', component: ReviseSubjectContentComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'studentSubject', component: StudentSubjectPageComponent },
+  { path: 'upload', component: UploadFilePageComponent },
+  { path: 'edit', component: EditPageComponent },
+  { path: 'gpt', component: GptComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    OCRComponent,
     MainpageComponent,
-    MainpagebodyComponent,HeaderComponent,
-    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent,PeerHelpComponent
+    MainpagebodyComponent,
+    HeaderComponent,
+    OCRComponent,
+    FooterComponent,
+    TeachersubjectpageComponent,
+    StudentSubjectPageComponent,
+    UploadFilePageComponent,
+    GptComponent,
+    EditPageComponent
   ],
   imports: [
     BrowserModule,
@@ -50,9 +64,11 @@ const routes: Routes = [
     HttpClientModule,
     RouterOutlet,
     RouterModule.forRoot(routes),
+    ReactiveFormsModule
+
   ],
   exports: [FooterComponent],
-  providers: [LoginService],
+  providers: [LoginService,GPTService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

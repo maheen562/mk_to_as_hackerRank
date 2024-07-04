@@ -6,6 +6,7 @@ import { TeachersubjectpageComponent } from '../teachersubjectpage/teachersubjec
 import { StudentSubjectPageComponent } from '../student-subject-page/student-subject-page.component';
 import { UploadFilePageComponent } from '../upload-file-page/upload-file-page.component';
 import { OCRComponent } from '../ocr/ocr.component';
+import { EditPageComponent } from '../edit-page/edit-page.component';
 
 export const routes: Routes = [
     {
@@ -30,7 +31,9 @@ export const routes: Routes = [
     {
         path: 'OCR',
         component: OCRComponent
-    }
+    },
+  { path: 'edit', component: EditPageComponent },
+
 ];
 
 @NgModule({

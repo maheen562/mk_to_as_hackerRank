@@ -1,28 +1,28 @@
-<!-- https://www.youtube.com/watch?v=wRP-VVdGswU -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF to Text Extractor</title>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <div class="pdfwork">
-        <h1>pdf text extraxter</h1>
-        <span>Select PDF</span>
-        <input type="file" class="selectpdf">
-        <button>Upload</button>
-        <div class="afterupload">
-            <span> Select Page </span>
-            <select class="select-page"></select>
-            <a href="" class="download" download=""> Download pdf Text</a>
-            <textarea class="pdftext"></textarea>
-            <p>{{test}}</p>
-        </div>
+  <div class="pdfwork">
+    <h1>PDF To Text Extractor</h1>
+    <!-- <button class="another" (click)="reload()">Extract Another PDF</button> -->
+    <span>Select PDF</span>
+    <input type="file" class="selectpdf" (change)="onFileSelected($event)">
+    <!-- <span>Password :</span> -->
+    <!-- <input type="password" class="pwd" placeholder="optional" [(ngModel)]="password"> -->
+    <!-- <button class="upload" (click)="uploadPdf()">Upload</button> -->
+    <div class="afterupload" [style.display]="alltext.length ? 'flex' : 'none'">
+      <!-- <span>Select Page</span>
+      <select class="selectpage" (change)="onPageChange($event)">
+        <option *ngFor="let page of pages; let i = index" [value]="i + 1">{{ i + 1 }}</option>
+      </select>
+      <a class="download" [href]="downloadLink" download>Download Pdf Text</a> -->
+      <textarea class="pdftext">{{ alltext }}</textarea>
     </div>
-    
+  </div>
+  
 </body>
 </html>

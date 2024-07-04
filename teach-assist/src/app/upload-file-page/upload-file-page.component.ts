@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-upload-file-page',
@@ -10,5 +11,10 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './upload-file-page.component.css'
 })
 export class UploadFilePageComponent {
+  constructor(private router:Router){}
+
+  UploadFile(){
+    this.router.navigate(['editPage']);
+  }
 
 }
