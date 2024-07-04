@@ -42,7 +42,7 @@ const routes: Routes = [
     OCRComponent,
     MainpageComponent,
     MainpagebodyComponent,HeaderComponent,
-    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent
+    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent,PeerHelpComponent
   ],
   imports: [
     BrowserModule,
