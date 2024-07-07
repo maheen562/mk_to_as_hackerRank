@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-page',
@@ -103,5 +104,21 @@ export class EditPageComponent {
         let eachquestion = `<div class="q-wrapper>Q: <textarea> {{questions[i].question}} </textarea></div>`
     }
   }
+
+  constructor(private router:Router){}
   
+  upload_text = "Upload Content"
+  uploadMessage = ""
+  uploadcomplete = false;
+  link_to_mainpage = ""
+
+  CompleteUpload(){
+    if(this.uploadcomplete == true){
+      this.router.navigate(['teacherSubject'])
+    }
+    this.upload_text = "Back to Main Page"
+    this.uploadMessage = "Upload Complete"
+    this.uploadcomplete = true;
+  }
+
   }

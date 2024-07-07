@@ -16,10 +16,14 @@
         [original-size]="false"
         [autoresize]="true"
         ></pdf-viewer>
+        <div class="button">
+            <p>{{uploadMessage}}</p>
+            <button class="upload-button" (click)="CompleteUpload()">{{upload_text}}</button>
+        </div>
     </div>
     <div class="left-scroll">
       <div class="content">
-        <h1>Summary</h1>
+        <h1 class="font">Summary</h1>
         <textarea
           class="summary-box"
           id="summary-box"
@@ -29,20 +33,20 @@
           required
         >
         </textarea>
-        <h1>Questions</h1>
+        <h1 class="font">Questions</h1>
 
         <div class="question">
           <div *ngFor="let question of questions" class="subject-item">
             <div class="q-wrapper">
-              <h3>Question:</h3>
-              <textarea name="" id="" class="edit-box">
+              <h3 class="font">Question:</h3>
+              <textarea name="" id="" class="edit-box question">
                               {{ question.question }}
                           </textarea
               >
             </div>
             <div class="q-wrapper">
-              <h3>Answer:</h3>
-              <textarea name="" id="" class="edit-box">
+              <h3 class="font">Answer:</h3>
+              <textarea name="" id="" class="edit-box answer">
                           {{ question.answer }}
                       </textarea
               >
@@ -51,7 +55,7 @@
         </div>
       </div>
     </div>
-    <script>
+    <!-- <script>
         let sidebar = document.getElementsByClassName("sidebar")[0];
         let sidebar_content = document.getElementsByClassName("content")[0];
 
@@ -68,7 +72,7 @@
                 sidebar_content.style.position = "";
             }
         }
-    </script>
+    </script> -->
 
     <!-- <div *ngFor="let subject of subjects" class="subject-item">
       <a href="teacherSubject">

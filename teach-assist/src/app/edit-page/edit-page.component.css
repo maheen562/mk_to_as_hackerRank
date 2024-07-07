@@ -8,6 +8,11 @@
     width: 100%;
     height: 300px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: 
+    rgb(74, 74, 74);
+    background-color: rgb(228, 228, 228);
+
 }
 
 .subject-item{
@@ -15,17 +20,37 @@
 
 }
 
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .edit-box{
     width: 100%;
     height: fit-content;
     box-sizing: border-box;
+    height: auto;
+    resize: none;
+    background-color: rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: 
+    rgb(74, 74, 74);
 }
 
+.question{
+    min-height: 50px;
+}
+
+.answer{
+    min-height: 130px;
+}
 .pdf-box{
-    background-color: rgb(147, 74, 74);
+    background-image: linear-gradient(180deg, rgb(209, 208, 208), rgb(226, 226, 226));
     width: 47%;
-    float: right;
     height: 80vh;
+    display: inline-block;
+    float: right;
+    position: sticky;
+    top: 30px
+
 }
 
 .pdf-view{
@@ -39,4 +64,18 @@
 }
 
 .left-scroll{
+}
+
+.button{
+    padding: 1%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.upload-button{
+    position: absolute;
+    right: 50px;
+    color : white;
+    background-color: blue;
+    padding: 0.5%;
+    border-radius: 10%;
 }
