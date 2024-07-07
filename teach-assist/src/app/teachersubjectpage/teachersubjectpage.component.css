@@ -48,7 +48,10 @@ body {
     display: block; /* Make the link fill the box */
     
   }
-  
+  .student-progress-link{
+    color:white;
+    text-decoration: none
+  }
   /* Hover effect */
   .view_student_progress-box:hover, .upload_content-box:hover {
     background-color: #2980b9; /* Darker blue on hover */

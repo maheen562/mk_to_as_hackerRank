@@ -20,10 +20,10 @@ import { PeerHelpComponent } from './peer-help/peer-help.component';
 import { ReviseSubjectContentComponent } from './revise-subject-content/revise-subject-content.component';
 import { UploadFilePageComponent } from './upload-file-page/upload-file-page.component';
 //import { LoginService } from './login/login.service';
-import * as PDFJS from "pdfjs-dist";
+import * as PDFJS from 'pdfjs-dist';
 import { GptComponent } from './gpt/gpt.component';
 // import { GPTService } from './gpt/gpt.service';
-import ChatGPT from "chatgpt-api"
+import ChatGPT from 'chatgpt-api';
 import { GPTService } from './gpt/gpt.service';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -43,7 +43,7 @@ const routes: Routes = [
   { path: 'upload', component: UploadFilePageComponent },
   { path: 'edit', component: EditPageComponent },
   { path: 'gpt', component: GptComponent },
-  { path: 'studentProgress', component: StudentsProgressPageComponent},
+  { path: 'studentProgress', component: StudentsProgressPageComponent },
 ];
 
 @NgModule({
@@ -59,7 +59,8 @@ const routes: Routes = [
     StudentSubjectPageComponent,
     UploadFilePageComponent,
     GptComponent,
-    EditPageComponent,PeerHelpComponent
+    EditPageComponent,
+    PeerHelpComponent,StudentsProgressPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,11 +68,11 @@ const routes: Routes = [
     HttpClientModule,
     RouterOutlet,
     RouterModule.forRoot(routes),
-    ReactiveFormsModule,PdfViewerModule,StudentsProgressPageComponent
-
+    ReactiveFormsModule,
+    PdfViewerModule,
   ],
-  exports: [HeaderComponent,FooterComponent],
-  providers: [LoginService,GPTService],
+  exports: [HeaderComponent, FooterComponent],
+  providers: [LoginService, GPTService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
