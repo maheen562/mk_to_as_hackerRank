@@ -1,0 +1,84 @@
+<app-header></app-header>
+<div class="chat-container">
+  <div class="sidebar">
+    <h2>Channels</h2>
+    <input type="text" placeholder="Search Channels" class="search-channels">
+    <ul class="channels-list">
+      <li class="channel active">General <span class="unread-count">3</span></li>
+      <li class="channel">English <span class="unread-count">5</span></li>
+      <li class="channel">Biology <span class="unread-count">0</span></li>
+      <li class="channel">Group Projects <span class="unread-count">1</span></li>
+      <!-- More channels -->
+    </ul>
+    <button class="create-channel">Create Channel</button>
+    <h2>Direct Messages</h2>
+    <ul class="dm-list">
+      <li class="dm">Rhea</li>
+      <li class="dm">Sarah</li>
+      <li class="dm">Alexandra</li>
+      <li class="dm">Sinya</li>
+      <!-- More DMs -->
+    </ul>
+  </div>
+
+  <div class="chat-main">
+    <div class="chat-header">
+      <h2>Chat-Box</h2>
+      <!-- Add search and settings here -->
+    </div>
+    <div class="chat-messages">
+      <div class="message">
+        <span class="user-avatar">A</span>
+        <div class="message-content">
+          <p class="message-text">Hello everyone!</p>
+          <span class="message-time">10:00 AM</span>
+        </div>
+      </div>
+      <!-- More messages -->
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message...">
+      <button class="send-btn">Send</button>
+    </div>
+  </div>
+
+  <div class="profile-panel">
+    <h2>Profile</h2>
+    
+    <!-- Profile Details -->
+    <div class="profile-details">
+      <div class="profile-info">
+        <h3>Name: John Doe</h3>
+        <p>Studying: Computer Science</p>
+        <p>University: Example University</p>
+      </div>
+      
+      <div class="profile-projects">
+        <h3>Projects</h3>
+        <ul>
+          <li>Group Project: Mobile App Development</li>
+          <li>Research Paper: AI in Education</li>
+        </ul>
+      </div>
+      <div class="profile-standings">
+        <h3>Subject Standings</h3>
+        <ul>
+          <li>Computer Networks: A-</li>
+          <li>Database Systems: B+</li>
+          <li>Web Development: A</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Connections and Settings -->
+    <div class="profile-options">
+      <h3>Add more peers</h3>
+      <a href= 'studentSubject/peerHelp'><button class="connect-btn">Connect with Peers</button></a>
+      
+      <h3>Settings & Privacy</h3>
+      <p>Profile Visibility: Public</p>
+      <p>Privacy Settings: <a href="#">Manage</a></p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

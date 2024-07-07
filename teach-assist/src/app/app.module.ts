@@ -20,7 +20,7 @@ import { PeerHelpComponent } from './peer-help/peer-help.component';
 import { ReviseSubjectContentComponent } from './revise-subject-content/revise-subject-content.component';
 import { UploadFilePageComponent } from './upload-file-page/upload-file-page.component';
 //import { LoginService } from './login/login.service';
-
+import { ChatpageComponent } from './chatpage/chatpage.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'mainpage', component: MainpageComponent },
@@ -32,7 +32,8 @@ const routes: Routes = [
   { path: 'studentSubject/revision', component:ReviseSubjectContentComponent},
   { path: 'teacherSubject', component:TeachersubjectpageComponent},
   { path: 'studentSubject', component:StudentSubjectPageComponent},
-  {path: 'upload',component: UploadFilePageComponent}
+  {path: 'upload',component: UploadFilePageComponent},
+  {path: 'Chat',component: ChatpageComponent}
 ];
 
 @NgModule({
@@ -42,7 +43,7 @@ const routes: Routes = [
     OCRComponent,
     MainpageComponent,
     MainpagebodyComponent,HeaderComponent,
-    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent,PeerHelpComponent
+    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent,PeerHelpComponent, ChatpageComponent
   ],
   imports: [
     BrowserModule,
