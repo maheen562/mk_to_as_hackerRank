@@ -26,6 +26,7 @@ import { GptComponent } from './gpt/gpt.component';
 import ChatGPT from "chatgpt-api"
 import { GPTService } from './gpt/gpt.service';
 import { EditPageComponent } from './edit-page/edit-page.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -56,7 +57,7 @@ const routes: Routes = [
     StudentSubjectPageComponent,
     UploadFilePageComponent,
     GptComponent,
-    EditPageComponent
+    EditPageComponent,PeerHelpComponent
   ],
   imports: [
     BrowserModule,
@@ -64,10 +65,10 @@ const routes: Routes = [
     HttpClientModule,
     RouterOutlet,
     RouterModule.forRoot(routes),
-    ReactiveFormsModule
+    ReactiveFormsModule,PdfViewerModule
 
   ],
-  exports: [FooterComponent],
+  exports: [HeaderComponent,FooterComponent],
   providers: [LoginService,GPTService],
   bootstrap: [AppComponent],
 })
