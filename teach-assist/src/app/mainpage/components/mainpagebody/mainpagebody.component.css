@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .subject-list {
     margin-top: 20px;
   }

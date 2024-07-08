@@ -1,40 +1,28 @@
 <app-header></app-header>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="center-content">
-        <h1>Steps to Follow</h1>
-        <p>1. Upload Stubject Content</p>
-        <p>2. Generate Summary and Required questions</p>
-        <p>3. Edit and review content</p>
-        <p>4. Upload for student access</p>
+      <br /><br /><br /><br /><br /><br />
 
-        <form (ngSubmit)="UploadFile()">
-            <label for="fileInput">Choose a file:</label>
-            <input type="file" id="fileInput">
-            <a href="edit">Upload</a>
-            <!-- <button type="submit" id="uploadButton" class="upload-button" name="uploadButton">Upload</button> -->
-        </form>
-        
-        <!-- <ol>
-            <li>Enter the corresponding data file</li>
-            <li>Generate the required content</li>
-            <li>Edit content if required</li>
-            <li>Proceed to final review</li>
-            <li>Upload for student access</li>
-        </ol> -->
+      <h1>Steps to Follow</h1>
+      <p>1. Upload Stubject Content</p>
+      <p>2. Generate Summary and Required questions</p>
+      <p>3. Edit and review content</p>
+      <p>4. Upload for student access</p>
+
+      <form (ngSubmit)="UploadFile()">
+        <label for="fileInput">Choose a file:</label>
+        <input type="file" id="fileInput" />
+        <br><br>
+        <button type="submit" id="uploadButton" class="upload-button" name="uploadButton"><a href="edit" class="Upload">Upload</a></button>
+    </form>
     </div>
-
-
-
-
-
-</body>
-<app-footer></app-footer>
-
-
+  </body>
+  <app-footer></app-footer>
+</html>

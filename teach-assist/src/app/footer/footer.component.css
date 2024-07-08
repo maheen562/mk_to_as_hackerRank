@@ -1,8 +1,32 @@
-div 
-{
-    display: flex;
-    justify-content: center;
-    
-    /* min-height: 100vh; */
-    align-items: flex-end;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
 }
+
+html,body{
+    height: 100%
+}
+
+
+.footer
+{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(to bottom,#1212c1,#03008E);
+    border-top: 1.5px solid #8c8b99;
+    color:aliceblue;
+    width: 100%;
+    /* display: flex;
+    min-height: 100%;
+    align-items: flex-end;
+    height: 100px;
+    margin-top: -100px;
+    clear: both; */
+}
+

@@ -15,14 +15,19 @@ li {
     padding: 5px 0; /* Add padding for visual separation */
 }
 button {
+    display: inline-block;
+    padding: 10px;
+
     margin-left: 70px;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background: linear-gradient(to bottom,#1212c1,#03008E);
     color: white;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 button:hover {
     background-color: #45a049;
@@ -32,7 +37,7 @@ button:hover {
     align-items: center;
     text-align: center;
     color: rgb(91, 91, 91);
-
+    justify-content: center;
 }
 
 .file-box{
@@ -40,6 +45,10 @@ button:hover {
     color : rgb(109, 109, 109)
 }
 
+.Upload{
+    text-decoration: none;
+    color: white
+}
 .choose-file{
 
 }
