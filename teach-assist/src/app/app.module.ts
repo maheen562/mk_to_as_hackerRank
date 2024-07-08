@@ -28,6 +28,7 @@ import { GPTService } from './gpt/gpt.service';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { StudentsProgressPageComponent } from './students-progress-page/students-progress-page.component';
+import { AccessFeedbackComponent } from './access-feedback/access-feedback.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: 'edit', component: EditPageComponent },
   { path: 'gpt', component: GptComponent },
   { path: 'studentProgress', component: StudentsProgressPageComponent },
+  { path: 'accessFeedback', component: AccessFeedbackComponent},
 ];
 
 @NgModule({
@@ -61,6 +63,7 @@ const routes: Routes = [
     GptComponent,
     EditPageComponent,
     PeerHelpComponent,StudentsProgressPageComponent,
+     AccessFeedbackComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,7 @@ const routes: Routes = [
     RouterOutlet,
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
-    PdfViewerModule,
+    PdfViewerModule
   ],
   exports: [HeaderComponent, FooterComponent],
   providers: [LoginService, GPTService],
