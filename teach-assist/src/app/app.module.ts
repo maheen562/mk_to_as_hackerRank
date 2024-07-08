@@ -20,7 +20,7 @@ import { PeerHelpComponent } from './peer-help/peer-help.component';
 import { ReviseSubjectContentComponent } from './revise-subject-content/revise-subject-content.component';
 import { UploadFilePageComponent } from './upload-file-page/upload-file-page.component';
 //import { LoginService } from './login/login.service';
-import * as PDFJS from 'pdfjs-dist';
+import { ChatpageComponent } from './chatpage/chatpage.component';import * as PDFJS from 'pdfjs-dist';
 import { GptComponent } from './gpt/gpt.component';
 // import { GPTService } from './gpt/gpt.service';
 import ChatGPT from 'chatgpt-api';
@@ -46,6 +46,15 @@ const routes: Routes = [
   { path: 'gpt', component: GptComponent },
   { path: 'studentProgress', component: StudentsProgressPageComponent },
   { path: 'accessFeedback', component: AccessFeedbackComponent},
+  { path: 'teacherSubject', component:TeachersubjectpageComponent},
+  { path: 'teacherSubject', component:TeachersubjectpageComponent},
+  { path: 'teacherSubject', component:TeachersubjectpageComponent},
+  { path: 'studentSubject/peerHelp', component:PeerHelpComponent},
+  { path: 'studentSubject/revision', component:ReviseSubjectContentComponent},
+  { path: 'teacherSubject', component:TeachersubjectpageComponent},
+  { path: 'studentSubject', component:StudentSubjectPageComponent},
+  {path: 'upload',component: UploadFilePageComponent},
+  {path: 'Chat',component: ChatpageComponent}
 ];
 
 @NgModule({
@@ -53,6 +62,8 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     MainpageComponent,
+    MainpagebodyComponent,HeaderComponent,
+    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent,PeerHelpComponent, ChatpageComponent
     MainpagebodyComponent,
     HeaderComponent,
     OCRComponent,

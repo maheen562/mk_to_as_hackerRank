@@ -35,11 +35,12 @@ body {
   }
   
   .intro-box p {
-    font-size: 18px;
-    font-family: 'Inria Serif', serif; /* Use Inria Serif font */
-    font-weight: bold; /* Make it bold */
-    font-style: italic; /* Make it italic */
-    margin-bottom: 0; /* Remove bottom margin of paragraph */
+    text-align: center; /* Center align the text */
+    color: #03008E; /* Set text color to dark blue (#03008E) */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 600; /* Bolder font weight */
+    font-size: 18px; /* Adjust font size */
+    
   }
   
 
