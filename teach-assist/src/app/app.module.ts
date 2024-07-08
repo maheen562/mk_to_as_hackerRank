@@ -63,7 +63,7 @@ const routes: Routes = [
     LoginComponent,
     MainpageComponent,
     MainpagebodyComponent,HeaderComponent,
-    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent,PeerHelpComponent, ChatpageComponent
+    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent,PeerHelpComponent, ChatpageComponent,
     MainpagebodyComponent,
     HeaderComponent,
     OCRComponent,
