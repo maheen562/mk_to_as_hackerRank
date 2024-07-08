@@ -19,8 +19,10 @@ import { StudentSubjectPageComponent } from './student-subject-page/student-subj
 import { PeerHelpComponent } from './peer-help/peer-help.component';
 import { ReviseSubjectContentComponent } from './revise-subject-content/revise-subject-content.component';
 import { UploadFilePageComponent } from './upload-file-page/upload-file-page.component';
+import { TimetableComponent } from './timetable/timetable.component';
 //import { LoginService } from './login/login.service';
-import { ChatpageComponent } from './chatpage/chatpage.component';import * as PDFJS from 'pdfjs-dist';
+import { ChatpageComponent } from './chatpage/chatpage.component';
+import * as PDFJS from 'pdfjs-dist';
 import { GptComponent } from './gpt/gpt.component';
 // import { GPTService } from './gpt/gpt.service';
 import ChatGPT from 'chatgpt-api';
@@ -45,16 +47,17 @@ const routes: Routes = [
   { path: 'edit', component: EditPageComponent },
   { path: 'gpt', component: GptComponent },
   { path: 'studentProgress', component: StudentsProgressPageComponent },
-  { path: 'accessFeedback', component: AccessFeedbackComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'studentSubject/peerHelp', component:PeerHelpComponent},
-  { path: 'studentSubject/revision', component:ReviseSubjectContentComponent},
-  { path: 'teacherSubject', component:TeachersubjectpageComponent},
-  { path: 'studentSubject', component:StudentSubjectPageComponent},
-  {path: 'upload',component: UploadFilePageComponent},
-  {path: 'Chat',component: ChatpageComponent}
+  { path: 'accessFeedback', component: AccessFeedbackComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'studentSubject/peerHelp', component: PeerHelpComponent },
+  { path: 'studentSubject/revision', component: ReviseSubjectContentComponent },
+  { path: 'teacherSubject', component: TeachersubjectpageComponent },
+  { path: 'studentSubject', component: StudentSubjectPageComponent },
+  { path: 'upload', component: UploadFilePageComponent },
+  { path: 'Chat', component: ChatpageComponent },
+  { path: 'Timetable', component: TimetableComponent },
 ];
 
 @NgModule({
@@ -62,19 +65,23 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     MainpageComponent,
-    MainpagebodyComponent,HeaderComponent,
-    FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent,PeerHelpComponent, ChatpageComponent,
     MainpagebodyComponent,
     HeaderComponent,
-    OCRComponent,
     FooterComponent,
     TeachersubjectpageComponent,
     StudentSubjectPageComponent,
     UploadFilePageComponent,
+    PeerHelpComponent,
+    ChatpageComponent,
+    MainpagebodyComponent,
+    HeaderComponent,
+    OCRComponent,
+    FooterComponent,
     GptComponent,
     EditPageComponent,
-    PeerHelpComponent,StudentsProgressPageComponent,
-     AccessFeedbackComponent,
+    StudentsProgressPageComponent,
+    AccessFeedbackComponent,
+    TimetableComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +90,7 @@ const routes: Routes = [
     RouterOutlet,
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
-    PdfViewerModule
+    PdfViewerModule,
   ],
   exports: [HeaderComponent, FooterComponent],
   providers: [LoginService, GPTService],
