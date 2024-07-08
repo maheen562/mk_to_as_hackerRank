@@ -19,6 +19,7 @@ import { StudentSubjectPageComponent } from './student-subject-page/student-subj
 import { PeerHelpComponent } from './peer-help/peer-help.component';
 import { ReviseSubjectContentComponent } from './revise-subject-content/revise-subject-content.component';
 import { UploadFilePageComponent } from './upload-file-page/upload-file-page.component';
+import { TimetableComponent } from './timetable/timetable.component';
 //import { LoginService } from './login/login.service';
 
 const routes: Routes = [
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'teacherSubject', component:TeachersubjectpageComponent},
   { path: 'studentSubject', component:StudentSubjectPageComponent},
   {path: 'upload',component: UploadFilePageComponent}
+  ,{path: 'Timetable',component: TimetableComponent}
 ];
 
 @NgModule({
@@ -43,6 +45,7 @@ const routes: Routes = [
     MainpageComponent,
     MainpagebodyComponent,HeaderComponent,
     FooterComponent,TeachersubjectpageComponent,StudentSubjectPageComponent,UploadFilePageComponent
+    ,TimetableComponent
   ],
   imports: [
     BrowserModule,
