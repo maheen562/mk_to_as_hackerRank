@@ -1,22 +1,22 @@
 .chat-container {
     display: flex;
     height: 100vh;
-    justify-content: space-between; /* Ensure items are spaced evenly */
+    justify-content: space-between; 
   }
   
-  /* Sidebar styling */
+ 
   .sidebar {
     width: 25%;
     background-color: #f1f1f1;
     padding: 20px;
-    border-right: 1px solid #ccc; /* Add border between sidebar and chat */
-    overflow-y: auto; /* Allow scrolling for long channel and DM lists */
+    border-right: 1px solid #ccc; 
+    overflow-y: auto; 
   }
   
   .sidebar h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: #03008E; /* Dark blue header */
+    color: #03008E; 
   }
   
   .search-channels {
@@ -48,13 +48,13 @@
   }
   
   .channel.active {
-    background-color: #c0c0c0; /* Lighter background for active channel */
+    background-color: #c0c0c0; 
     font-weight: bold;
   }
   
   .channel:hover,
   .dm:hover {
-    background-color: #b0b0b0; /* Darker background on hover */
+    background-color: #b0b0b0;
   }
   
   .unread-count {
@@ -77,19 +77,19 @@
   }
   
   .create-channel:hover {
-    background-color: #0500c8; /* Darker shade on hover */
+    background-color: #0500c8; 
   }
   
   .chat-main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background-color: #d9d9d9; /* Background color for the chat main area */
-    border-left: 1px solid #ccc; /* Example border */
+    background-color: #d9d9d9; 
+    border-left: 1px solid #ccc; 
   }
   
   .chat-header {
-    background: #03008E; /* Gradient background for chat-header */
+    background: #03008E; 
     color: white;
     padding: 20px;
     display: flex;
@@ -101,7 +101,7 @@
     flex-grow: 1;
     padding: 20px;
     overflow-y: auto;
-    background: linear-gradient(to bottom, #f9f9f9, #ffffff); /* Gradient background for chat-messages */
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff); 
     border-bottom: 1px solid #ccc;
   }
   
@@ -167,7 +167,7 @@
   }
   
   .chat-input .send-btn:hover {
-    background-color: #0500c8; /* Darker shade on hover */
+    background-color: #0500c8;
   }
   
   .profile-panel {
@@ -185,7 +185,7 @@
     font-size: 1.8em;
     margin-bottom: 15px;
     color: #03008E;
-    border-bottom: 2px solid #03008E; /* Adding a border bottom for emphasis */
+    border-bottom: 2px solid #03008E; 
     padding-bottom: 10px;
   }
   
@@ -211,7 +211,7 @@
   .profile-projects,
   .profile-standings,
   .profile-options {
-    margin-bottom: 10px; /* Adjusted margin-bottom for tighter spacing */
+    margin-bottom: 10px; 
   }
   
   .profile-projects h3,

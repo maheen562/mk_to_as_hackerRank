@@ -8,8 +8,5 @@ import { CommonModule } from '@angular/common';
 //   imports: [CommonModule]
 })
 export class MainpagebodyComponent {
-  subjects = [
-    { code: 'Comp30023', name: 'Computer Systems' },
-    { code: 'Comp10023', name: 'Introduction to the New World' }
-  ];
+  
 }

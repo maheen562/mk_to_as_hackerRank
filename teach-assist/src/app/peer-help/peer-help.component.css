@@ -1,69 +1,67 @@
-/* Global reset for margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  /* Background color for the entire page */
+
 body {
     background-color: #EAEAEA;
   }
   
-  /* Container for the page content */
+
   .container {
-    max-width: 1000px; /* Adjust maximum width as needed */
-    margin: 20px auto; /* Center align horizontally with margin */
-    padding: 0 20px; /* Add padding for spacing */
+    max-width: 1000px; 
+    margin: 20px auto; 
+    padding: 0 20px; 
     margin-top: 20px;
   }
 
   header {
-    margin-bottom: 40px; /* Add margin at the bottom of the header */
+    margin-bottom: 40px; 
   }
 
   .intro-box {
     background-color: #D9D9D9;
     color: #03008E;
-    margin-top: 20px; /* Add margin at the top and bottom */
+    margin-top: 20px; 
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 20px; /* Adjusted margin for bottom spacing */
-    width: 100%; /* Occupy full width */
-    text-align: center; /* Center align text */
+    margin-bottom: 20px; 
+    width: 100%; 
+    text-align: center; 
     
   }
   
   .intro-box p {
-    text-align: center; /* Center align the text */
-    color: #03008E; /* Set text color to dark blue (#03008E) */
-    font-family: 'Inter', sans-serif; /* Use Inter font */
-    font-weight: 600; /* Bolder font weight */
-    font-size: 18px; /* Adjust font size */
+    text-align: center; 
+    color: #03008E; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600; 
+    font-size: 18px; 
     
   }
   
 
-  
-  /* Styling for the search bar */
   .search-bar {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; /* Adjusted margin for bottom spacing */
-    width: 100%; /* Occupy full width */
+    margin-bottom: 20px; 
+    width: 100%; 
   }
   
   .search-bar input[type="text"] {
-    padding: 15px; /* Increase padding for better input field size */
+    padding: 15px; 
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: calc(100% - 100px); /* Adjust width to leave space for button */
-    max-width: 600px; /* Limit maximum width to prevent stretching */
+    width: calc(100% - 100px); 
+    max-width: 600px;
     margin-right: 10px;
   }
   
   .search-bar button {
-    padding: 15px 20px; /* Adjust padding for button */
+    padding: 15px 20px; 
     background-color: #03008E;
     color: #fff;
     border: none;
@@ -75,35 +73,35 @@ body {
     background-color: #001F6D;
   }
   
-  /* Styling for the recommended peers box */
+
   .recommended-box {
     background-color: #D9D9D9;
     color: #000001;
     padding: 20px;
     border-radius: 8px;
-    width: 100%; /* Occupy full width */
-    text-align: center; /* Center align text */
+    width: 100%; 
+    text-align: center; 
   }
   
   .recommended-box h2 {
-    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    font-family: 'Inter', sans-serif; 
     font-size: 24px;
     font-weight: bold;
-    text-align: center; /* Center align heading */
+    text-align: center; 
   }
   
   .recommended-box .recommendation-text {
     margin-top: 10px;
-    font-family: 'Inter', sans-serif; /* Apply Inter font */
-    font-size: 16px; /* Reduced font size */
-    text-align: center; /* Center align text */
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    text-align: center; 
   }
   
-  /* Styling for recommendation cards */
+  
   .recommendation-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribute space between cards */
+    justify-content: space-between; 
     margin-top: 20px;
   }
   
@@ -114,25 +112,25 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    width: calc(50% - 10px); /* Two cards per row with margin */
+    width: calc(50% - 10px); 
     text-align: left;
   }
   
   .card h3 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: bold;
   }
   
   .card p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     margin: 10px 0;
   }
 
   .card:hover {
-    transform: translateY(-10px); /* Lift up on hover */
-    box-shadow: 0 8px 16px rgb(164, 201, 222); /* Darker shadow on hover */
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgb(164, 201, 222); 
   }
 
   .connect-button {
@@ -146,7 +144,7 @@ body {
   }
   
   .connect-button:hover {
-    background-color: hsl(222, 10%, 62%); /* Darken the background color on hover */
+    background-color: hsl(222, 10%, 62%); 
   }
   
 
@@ -156,10 +154,10 @@ body {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    margin-top: 20px; /* Adds space between recommendation boxes and discussion box */
-    width: 100%; /* Occupy full width */
-    font-family: 'Inter', sans-serif; /* Apply Inter font */
-    font-size: 18px; /* Set font size */
+    margin-top: 20px; 
+    width: 100%; 
+    font-family: 'Inter', sans-serif; 
+    font-size: 18px; 
     font-weight: 600;
   }
   
@@ -168,22 +166,22 @@ body {
     color: #ffffff;
     border: none;
     padding: 10px 20px;
-    margin-top: 15px; /* Adds space between text and button */
+    margin-top: 15px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .discussion-button:hover {
-    background-color: #9b9b9b; /* Darken the background color on hover */
+    background-color: #9b9b9b; 
   }
 
   .centered-text {
-    text-align: center; /* Center align the text */
-    color: #03008E; /* Set text color to dark blue (#03008E) */
-    font-family: 'Inter', sans-serif; /* Use Inter font */
-    font-weight: 600; /* Bolder font weight */
-    font-size: 18px; /* Adjust font size */
-    margin: 50px 0; /* Add more vertical margin for spacing */
+    text-align: center; 
+    color: #03008E; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600; 
+    font-size: 18px; 
+    margin: 50px 0; 
   }
   

@@ -1,48 +1,80 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .subject-list {
+body {
+    background-color: #d9d9d9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .subject-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .subject-box {
+    width: 60%; 
     margin-top: 20px;
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .subject-heading {
     display: flex;
     align-items: center;
+    margin-bottom: 15px; 
   }
   
   .subject-heading h2 {
-    font-family: 'Times New Roman', serif;
+
     font-size: 22px;
-    font-weight: normal; /* Adjust font weight */
-    margin-right: 10px; /* Adjust spacing between "Subjects:" and the line */
-    margin-bottom: 5px;
-    margin-left: 50px; /* Add left margin */
-    margin-right: 50px; /* Add right margin */
+    font-weight: normal;
+    margin: 0;
+    margin-right: 10px; 
+    color: #03008E; 
   }
   
-  
   .divider {
+    flex-grow: 1; 
+    height: 1px;
+    background-color: #03008E; 
+    margin: 0; 
     border: none;
-    height: 0.5px;
-    background-color: #333; /* Color of the divider line */
-    margin-top: 0; /* Remove margin above the line */
-    margin-bottom: 15px; /* Add margin below the line */
-    margin-left: 50px; /* Add left margin */
-    margin-right: 50px; /* Add right margin */
   }
   
   .subject-item {
-    margin-top: 10px; /* Space between each subject item */
-    margin-left: 50px; /* Add left margin */
-    margin-right: 50px; /* Add right margin */
+    display: block; 
+    margin-top: 10px; 
+    padding: 10px;
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-decoration: none; 
   }
   
   .subject-item h3 {
-    font-family: 'Times New Roman', serif;
+
     font-size: 17px;
     margin: 0;
     color: #333;
   }
   
+  .subject-item:hover {
+    background-color: #e0e0e0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  }
+  
+  .subject-item h3:hover {
+    color: #03008E; 
+  }
