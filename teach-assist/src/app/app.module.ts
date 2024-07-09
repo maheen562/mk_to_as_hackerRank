@@ -37,8 +37,6 @@ const routes: Routes = [
   { path: 'mainpage', component: MainpageComponent },
   { path: 'OCR', component: OCRComponent },
   { path: 'teacherSubject', component: TeachersubjectpageComponent },
-  { path: 'teacherSubject', component: TeachersubjectpageComponent },
-  { path: 'teacherSubject', component: TeachersubjectpageComponent },
   { path: 'studentSubject/peerHelp', component: PeerHelpComponent },
   { path: 'studentSubject/revision', component: ReviseSubjectContentComponent },
   { path: 'teacherSubject', component: TeachersubjectpageComponent },
@@ -58,6 +56,7 @@ const routes: Routes = [
   { path: 'upload', component: UploadFilePageComponent },
   { path: 'Chat', component: ChatpageComponent },
   { path: 'Timetable', component: TimetableComponent },
+  
 ];
 
 @NgModule({
@@ -81,7 +80,8 @@ const routes: Routes = [
     EditPageComponent,
     StudentsProgressPageComponent,
     AccessFeedbackComponent,
-    TimetableComponent,
+    TimetableComponent, 
+    ReviseSubjectContentComponent
   ],
   imports: [
     BrowserModule,

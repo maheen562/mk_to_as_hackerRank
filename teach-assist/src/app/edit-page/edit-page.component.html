@@ -19,7 +19,10 @@
         ></pdf-viewer>
         <div class="button">
             <p>{{uploadMessage}}</p>
-            <button class="upload-button" (click)="CompleteUpload()">{{upload_text}}</button>
+            <button class="upload-button" (click)="CompleteUpload()">
+                <div class="upload-text">
+                    {{upload_text}}
+                </div></button>
         </div>
     </div>
     <div class="left-scroll">
@@ -41,7 +44,7 @@
             <div class="q-wrapper">
               <h3 class="font">Question:</h3>
               <textarea name="" id="" class="edit-box question">
-                              {{ question.question }}
+                              {{question.question}}
                           </textarea
               >
             </div>
@@ -56,32 +59,7 @@
         </div>
       </div>
     </div>
-    <!-- <script>
-        let sidebar = document.getElementsByClassName("sidebar")[0];
-        let sidebar_content = document.getElementsByClassName("content")[0];
-
-        window.onscroll = () =>{
-            let scrollTop = window.scrollY;
-            let viewportHeight = window.innerHeight;
-            let contentHeight = sidebar_content.getBoundingClientRect().height;
-
-            if(scrollTop >= contentHeight - viewportHeight){
-                sidebar_content.style.position = "fixed";
-
-            }
-            else{
-                sidebar_content.style.position = "";
-            }
-        }
-    </script> -->
-
-    <!-- <div *ngFor="let subject of subjects" class="subject-item">
-      <a href="teacherSubject">
-        <li>    
-
-        </li>
-      </a>
-    </div>   -->
+   
 
     <app-footer></app-footer>
   </body>

@@ -11,7 +11,7 @@
     
 }
 .outer-padding{
-    padding: 10vw;
+    padding: 5vw;
 }
 .login-text{
     font-family: Helvetica, sans-serif;
@@ -20,13 +20,20 @@
 
 .student-teacher-tab{
    display: flex;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
+   flex-direction: row;
+   align-items: center;
    width: 100%;
    font-family: Arial, Helvetica, sans-serif;
 }
 
 .tabs__label{
     padding: 10px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     order: 1;
     width: 100%;
     border-bottom: 3px solid black;
@@ -39,11 +46,20 @@
     display: none;
 }
 
+.tabs__radio+.tabs__label{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* Center vertically */
+    text-align: center;
+    position: relative;
+    padding-left: 122px;
+    padding-right: 122px;
+
+}
 .tabs__content{
     order: 1;
     width: 100%;
     border-bottom: 3px solid black;
-
 }
 
 .tabs__radio:checked+.tabs__label{
@@ -51,6 +67,7 @@
     background-color: #03008E;
     color: white;
     border-bottom: #03008E;
+
 
 }
 
@@ -121,10 +138,21 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    text-align: center;
+    
 }
 
 .alert-danger{
     color: red;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+
+.logo{
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+    ;
 }

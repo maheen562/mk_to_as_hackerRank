@@ -1,8 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body, html {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
     font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    overflow: auto;
 }
 
 ol {
@@ -49,6 +65,32 @@ button:hover {
     text-decoration: none;
     color: white
 }
+
+.upload-box{
+    
+    width:70%;
+    align-items:center;
+    border: 2px solid #8a8a8a ;
+   background-color: rgb(228, 228, 228); 
+   padding-left: 20px; 
+   justify-content: center;
+}
+.title{
+    /* justify-content:center; */
+    border-top-left-radius: 7px; /* Adjust the radius as needed */
+    border-top-right-radius: 7px;
+    align-items: center;
+}
+
+file-upload{
+    border-top: none;
+    padding: 10px;
+}
+.choose-file-button{
+    padding: 20px;
+    color: #000;
+}
+
 .choose-file{
 
 }
@@ -56,6 +98,27 @@ button:hover {
 
 }
 
-.upload-button{
-    
+upload-file-box{
+    align-items: center;
+    align-content: center;
+}
+
+.line{
+    border: 0.2px solid #b8b8b8;
+    width: 95%;
+    align-content: center;
+    border-radius: 5px;
+    align-items: center;
+    align-content: center;
+}
+
+.upload-button-back{
+    border-bottom-left-radius: 7px; /* Adjust the radius as needed */
+    border-bottom-right-radius: 7px; 
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.box-content{
+    padding-bottom: 500px;
 }

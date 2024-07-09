@@ -117,7 +117,7 @@ export class EditPageComponent {
       this.router.navigate(['teacherSubject'])
     }
     this.upload_text = "Back to Main Page"
-    this.uploadMessage = "Upload Complete"
+    this.uploadMessage = "Upload Complete!"
     this.uploadcomplete = true;
   }
 

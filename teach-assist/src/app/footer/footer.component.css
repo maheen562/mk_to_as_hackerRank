@@ -9,6 +9,16 @@ html,body{
     height: 100%
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    overflow: auto;
+}
+
 
 .footer
 {
@@ -17,7 +27,7 @@ html,body{
     bottom: 0;
     justify-content: center;
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0;
     background: linear-gradient(to bottom,#1212c1,#03008E);
     border-top: 1.5px solid #8c8b99;
     color:aliceblue;

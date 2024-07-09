@@ -28,8 +28,7 @@
     width: 100%;
     height: fit-content;
     box-sizing: border-box;
-    height: auto;
-    resize: none;
+
     background-color: rgb(228, 228, 228);
     font-family: Arial, Helvetica, sans-serif;
     border-color: 
@@ -74,9 +73,15 @@
 }
 .upload-button{
     position: absolute;
-    right: 50px;
+    right:30px;
     color : white;
-    background-color: blue;
-    padding: 0.5%;
+    background:  linear-gradient(to bottom,#1212c1,#03008E);;
+    padding: 10px;
     border-radius: 10%;
+    
+}
+.upload-text{
+    align-content: center ;
+    align-items: center;
+
 }

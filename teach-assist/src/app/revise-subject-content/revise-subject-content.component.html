@@ -6,7 +6,61 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Climate Change</h2>
+    <app-header></app-header>
+
+    <div class="content">
+        <div class="summary">
+            <h2>Summary</h2>
+            <br><br>
+            <pre>{{Summary}}</pre>
+  
+        </div>
+          
+        <div class="question">
+            <h3>Question 1:</h3>
+            <br>
+            <p>{{question.question}}</p>
+        </div>
+        <div class="answer">
+            <div class="text">
+                <textarea name="" id="" class="text-area"></textarea>
+            </div>
+        </div>
+        <div class="button-flex">
+            <div class="buttons">
+                <button class="each-button" (click)="DisplayFeedback()">
+                    View Feedback
+                </button>
+                
+            </div>
+            <div class="buttons">
+                <button class="each-button">
+                    Next Question
+                </button>
+            </div>
+        </div>
+        <br><br>
+        <div *ngIf="display_feedback">
+            <div class="feedback-box" >
+                <h3> Feedback </h3>
+                <!-- <div class="score">
+                    <p>calculated score: 70%</p>
+                </div> -->
+                <div  class="feedback">
+                    <br>
+                    <p>{{feedback}}</p>
+                </div>
+                <br><br>
+                <div class="score">
+                    <p>calculated score: 70%</p>
+                </div>
+            </div>
+          
+        </div>
+        
+    </div>
+
+    <!-- <h2>Climate Change</h2>
     <p>The climate of the Earth has changed significantly over time. While some of these changes were brought on by natural events like volcanic eruptions, floods, forest fires, etc., many of the changes were brought on by human activity. The burning of fossil fuels, domesticating livestock, and other human activities produce a significant quantity of greenhouse gases. This results in an increase of greenhouse effect and global warming which are the major causes for climate change.</p>
     <h2>Reasons of climate change</h2>
         <ol>
@@ -29,8 +83,8 @@
     <div>
         <button onclick="alert('Button clicked!')">Feedback</button>
         <button onclick="alert('Button clicked!')">Next question</button>
-    </div>
-
+    </div> -->
+    <app-footer></app-footer>
 
 </body>
 
