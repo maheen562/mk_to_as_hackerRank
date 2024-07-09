@@ -19,6 +19,9 @@ body {
 .content {
     flex: 1;
     overflow: auto;
+    justify-content: center;
+    align-items: center;
+
 }
 
 ol {
@@ -80,6 +83,7 @@ button:hover {
     border-top-left-radius: 7px; /* Adjust the radius as needed */
     border-top-right-radius: 7px;
     align-items: center;
+    text-align: center;
 }
 
 file-upload{
@@ -87,6 +91,8 @@ file-upload{
     padding: 10px;
 }
 .choose-file-button{
+    display: block;
+  margin: auto;
     padding: 20px;
     color: #000;
 }
@@ -117,8 +123,24 @@ upload-file-box{
     border-bottom-right-radius: 7px; 
     padding-top: 7px;
     padding-bottom: 7px;
+    justify-content: center;
+
 }
 
 .box-content{
     padding-bottom: 500px;
+}
+
+.upload-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+        margin: auto;
+
+}
+
+.button{
+
+        
 }

@@ -1,21 +1,46 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    padding: 20px;
+}
 .dashed-line{
     border: 1px solid black;
     width: 100%;
     height: 0 px;
 }
 .right-wrapper{
-    position: absolute;
-    right: 20px;
     display: flex;
+    text-align: right;
+
 }
 .topics{
     display: flex;
-    padding: 20px;
+    padding: 10px;
 }
 
+.line{
+    width: 99%;
+    border: 0.1px solid rgb(120, 120, 120);
+    display: block;
+    margin: auto;
+
+}
 .access-button{
     position: absolute;
     right: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom,#1212c1,#03008E);
+    padding: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+.detailed-feedback{
+    color: white;
+    text-decoration: none;
+    
 }
 
 .outer{
@@ -26,6 +51,7 @@
     box-shadow: 6px 6px 10px -1px rgba(255,255,255,0.7);
     padding: 50%;
 }
+
 .inner{
     height: 10px;
     width: 10px;
@@ -33,6 +59,38 @@
     border: 1px solid red;
 }
 
+.container{
+    text-align: right;
+    align-items: center;
+    padding-right: 30px;
+    justify-content: center;
+    /* margin-right: 100px; */
+}
+.right-hand-tabs{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float:right;
+}
+
+.percentage-text{
+   position: absolute;
+   right: 240px;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   font:bold;
+   
+}
+
+.o{
+    color: rgb(255, 98, 0);
+}
+
+.g{
+    color: green;
+}
 .box .percent{
     
 }
@@ -80,5 +138,10 @@
 
 .box .percent .number h2{
     font-size: 16px;
+}
+
+.topiccontent{
+    display: flex;
+    padding: 20px;
 }
 

@@ -9,34 +9,69 @@
   </head>
   <body>
     <app-header></app-header>
-    <div class="topic-statistics">
-      <h3>Understanding Statistics</h3>
-      <div class="dashed-line"></div>
-    </div>
-
-    <div class="topics">
-      <div class="right-wrapper">
-        <button class="access-button">
-          <a href="accessFeedback"> Access Feedback </a>
-        </button>
-
-        <div class="percentage-pie">
-          <div class="box">
-            <div class="percent">
-              <svg>
-                <circle cx="30%" cy="10" r="15"></circle>
-                <circle cx="30%" cy="10" r="15"></circle>
-              </svg>
-              <div class="number">
-                <h2>87<span>%</span></h2>
-              </div>
-            </div>
+    <div class="content">
+      <!-- <div class="topic-statistics">
+        <h2>Student Analysis</h2>
+        <div class="dashed-line"></div>
+      </div>
+      <div class="topiccontent">
+        <div class="topic_title">
+          <h3>Memory Management</h3>
+        </div>
+        <div class="right">
+          <div class="right-hand-tabs">
+            <p class="container">Timetable</p>
           </div>
         </div>
-      </div>
-      <p>{{ topic }}</p>
-    </div>
+      </div> -->
 
+      <div class="topic-statistics">
+        <h2>Student Analysis</h2>
+        <div class="dashed-line"></div>
+      </div>  
+      <div class="topics">
+        <div class="right-wrapper">
+          <p class="percentage-text g">Content understanding: 89%</p>
+          
+          <button class="access-button">
+            
+            <a href="accessFeedback" class="detailed-feedback"> Detailed Feedback </a>
+          </button>
+  
+
+        </div>
+        <p>{{ topic }}</p>
+      </div>
+      <div class="line"></div>
+      <div class="topics">
+        <div class="right-wrapper">
+          <p class="percentage-text o">Content understanding: 70%</p>
+          
+          <button class="access-button">
+            
+            <a href="accessFeedback" class="detailed-feedback"> Detailed Feedback </a>
+          </button>
+  
+
+        </div>
+        <p>TLB</p>
+      </div>
+      <div class="line"></div>
+      <div class="topics">
+        <div class="right-wrapper">
+          <p class="percentage-text g">Content understanding: 90%</p>
+          
+          <button class="access-button">
+            
+            <a href="accessFeedback" class="detailed-feedback"> Detailed Feedback </a>
+          </button>
+  
+
+        </div>
+        <p>MultiProgrammind</p>
+      </div>
+    </div>
+    
     <!-- <h3>Individual Student Performance</h3>
     <div class="dashed-line"></div> -->
 

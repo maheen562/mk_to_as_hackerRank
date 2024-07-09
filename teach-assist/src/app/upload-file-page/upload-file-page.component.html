@@ -9,40 +9,39 @@
   <body>
     <div class="content">
       <br /><br /><br /><br /><br /><br />
-        <div class="center-content">
-            <h1>Steps to Follow</h1>
-            <p>1. Upload Stubject Content</p>
-            <p>2. Generate Summary and Required questions</p>
-            <p>3. Edit and review content</p>
-            <p>4. Upload for student access</p>
-            
-        </div>
-      <br /><br />
-      <div class="box-content">
-        
-        <div class="upload-box">
-          <h4 class="title">Choose a File</h4>
-        </div>
-        <form (ngSubmit)="UploadFile()">
-          <div class="file-upload upload-box">
-            <label for="fileInput"></label>
-            <input type="file" id="fileInput" class="choose-file-button" />
-            <br />
-            <div class="line"></div>
-            <br />
-          </div>
-          <div class="upload-button-back upload-box">
-            <button
-              type="submit"
-              id="uploadButton"
-              class="upload-button"
-              name="uploadButton"
-            >
-              <a href="edit" class="Upload">Upload</a>
-            </button>
-          </div>
-        </form>
+      <div class="center-content">
+        <h1>Steps to Follow</h1>
+        <p>1. Upload Stubject Content</p>
+        <p>2. Generate Summary and Required questions</p>
+        <p>3. Edit and review content</p>
+        <p>4. Upload for student access</p>
       </div>
+      <br /><br />
+      <!-- <div class="box-content"> -->
+
+      <!-- <div class="upload-box"> -->
+      <h2 class="title">Choose a File</h2>
+      <!-- </div> -->
+      <form (ngSubmit)="UploadFile()">
+        <!-- <div class="file-upload upload-box"> -->
+        <label for="fileInput"></label>
+        <input type="file" id="fileInput" class="choose-file-button" />
+        <br />
+        <!-- <div class="line"></div> -->
+        <br />
+        <!-- </div> -->
+        <div class="upload-button-back">
+          <button
+            type="submit"
+            id="uploadButton"
+            class="upload-button"
+            name="uploadButton"
+          >
+            <a href="edit" class="Upload">Upload</a>
+          </button>
+        </div>
+      </form>
+      <!-- </div> -->
     </div>
   </body>
   <app-footer></app-footer>
